@@ -1,0 +1,16 @@
+
+{
+  "name": "readers-haven-library",
+  "version": "1.0.0",
+  "description": "A responsive public library website developed as a team project.",
+  "scripts": {
+    "build": "parcel build src/index.html src/collections.html src/membership.html src/services.html src/contact.html --dist-dir dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  }
+}
