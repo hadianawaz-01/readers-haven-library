@@ -99,6 +99,31 @@ section h2 {
     margin-top: 20px;
 }
 
+/* Collections Page */
+.collections-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.category {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 0;
+}
+
+.category ul {
+    list-style: none;
+}
+
+.category li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e5efe8;
+}
+
+.category li:last-child {
+    border-bottom: none;
+}
+
 /* Responsive Design */
 @media (max-width: 600px) {
     .container {
@@ -121,7 +146,12 @@ section h2 {
     .hero h2 {
         font-size: 24px;
     }
+
+    .collections-grid {
+        grid-template-columns: 1fr;
+    }
 }
+
 /* ===== Services page (Member 3) ===== */
 .svc-intro { text-align: center; padding: 1.5rem 1rem; }
 
@@ -284,4 +314,4 @@ nav a.active {
         grid-template-columns: 1fr;
     }
 }
-/*(Style membership page header, footer and plan cards)
+/*(Style membership page header, footer and plan cards)*/
