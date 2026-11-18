@@ -1,35 +1,12 @@
 
-/* Contact Page Styling */
-
-.contact-header {
-    background-color: #315c45;
-    color: white;
-    text-align: center;
-    padding: 35px 20px;
-    border-radius: 10px;
-    margin-bottom: 30px;
-}
-
-.contact-header h1 {
-    color: white;
-    margin-top: 0;
-}
-
-.contact-header p {
-    color: white;
-    margin-top: 10px;
-}
-
-.contact-container {
-    max-width: 900px;
-    margin: auto;
-}
+/* Contact Page Specific Styling */
 
 .contact-info,
 .feedback-section {
     background-color: white;
     padding: 25px;
-    margin-bottom: 25px;
+    margin: 25px auto;
+    max-width: 900px;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -78,22 +55,16 @@
     background-color: #244532;
 }
 
-/* Responsive Design for Mobile Devices */
+/* Contact Page Responsive Design */
 @media (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
-
-    .contact-header {
-        padding: 25px 10px;
-    }
-
     .contact-info,
     .feedback-section {
         padding: 15px;
+        margin: 15px auto;
     }
 
-    .contact-header h1 {
-        font-size: 24px;
+    .feedback-section input,
+    .feedback-section textarea {
+        font-size: 14px;
     }
 }
