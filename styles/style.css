@@ -123,3 +123,33 @@ section h2 {
         font-size: 24px;
     }
 }
+/* ===== Services page (Member 3) ===== */
+.svc-intro { text-align: center; padding: 1.5rem 1rem; }
+
+.svc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  padding: 1rem;
+}
+
+.svc-card {
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  background: #ffffff;
+}
+
+.svc-card h3 { margin-top: 0; }
+
+/* Responsive: tablets */
+@media (max-width: 900px) {
+  .svc-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Responsive: phones */
+@media (max-width: 600px) {
+  .svc-grid { grid-template-columns: 1fr; }
+  .svc-card { padding: 0.75rem 1rem; }
+}
+/* ===== End of Services page ===== */
