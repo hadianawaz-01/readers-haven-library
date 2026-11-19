@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,76 @@
     <title>Readers' Haven - Contact</title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
+
 <body>
-    <h1>Contact Readers' Haven</h1>
+
+    <header class="site-header">
+        <div class="container">
+            <h1>Readers' Haven</h1>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="collections.html">Collections</a>
+                <a href="membership.html">Membership</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <p>We would love to hear from you!</p>
+
+            <p><strong>Address:</strong> Readers' Haven Public Library, Lahore, Pakistan</p>
+            <p><strong>Phone:</strong> +92 300 1234567</p>
+            <p><strong>Email:</strong> info@readershaven.com</p>
+        </section>
+
+        <section class="feedback-section">
+            <h2>Send Us Your Feedback</h2>
+
+            <form>
+                <label for="name">Your Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="email">Your Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="message">Your Message:</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Write your message here"
+                    rows="5"
+                    required
+                ></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Readers' Haven Public Library. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
