@@ -1,4 +1,72 @@
-/* Shared Styles for Readers' Haven */
+/* Contact Page Specific Styling */
+
+.contact-info,
+.feedback-section {
+    background-color: white;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2,
+.feedback-section h2 {
+    color: #315c45;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.feedback-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-section label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.feedback-section input,
+.feedback-section textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.feedback-section button {
+    background-color: #315c45;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.feedback-section button:hover {
+    background-color: #244532;
+}
+
+/* Contact Page Responsive Design */
+@media (max-width: 600px) {
+    .contact-info,
+    .feedback-section {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    .feedback-section input,
+    .feedback-section textarea {
+        font-size: 14px;
+    }
+}
 
 /* Universal Styling */
 * {
@@ -13,7 +81,6 @@ body {
     background-color: #f5f5f5;
     color: #333;
     line-height: 1.6;
-<<<<<<< HEAD
 }
 
 /* Container */
@@ -98,15 +165,6 @@ section h2 {
     text-align: center;
     padding: 18px;
     margin-top: 20px;
-=======
-    padding: 20px;
-}
-
-h1 {
-    color: #315c45;
-    text-align: center;
-    margin-top: 30px;
->>>>>>> 7a97592 (Address review: remove extra h1, keep only collections CSS, format HTML)
 }
 
 /* Collections Page */
@@ -134,8 +192,8 @@ h1 {
     border-bottom: none;
 }
 
+/* Responsive Design */
 @media (max-width: 600px) {
-<<<<<<< HEAD
     .container {
         width: 95%;
     }
@@ -157,8 +215,6 @@ h1 {
         font-size: 24px;
     }
 
-=======
->>>>>>> 7a97592 (Address review: remove extra h1, keep only collections CSS, format HTML)
     .collections-grid {
         grid-template-columns: 1fr;
     }
@@ -326,4 +382,5 @@ nav a.active {
         grid-template-columns: 1fr;
     }
 }
-/*(Style membership page header, footer and plan cards)*/
+
+/* Style membership page header, footer and plan cards */
