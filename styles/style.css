@@ -1,21 +1,386 @@
-/* Shared Styles for Readers' Haven */
+/* Contact Page Specific Styling */
 
+.contact-info,
+.feedback-section {
+    background-color: white;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2,
+.feedback-section h2 {
+    color: #315c45;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.feedback-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback-section label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.feedback-section input,
+.feedback-section textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.feedback-section button {
+    background-color: #315c45;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.feedback-section button:hover {
+    background-color: #244532;
+}
+
+/* Contact Page Responsive Design */
+@media (max-width: 600px) {
+    .contact-info,
+    .feedback-section {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    .feedback-section input,
+    .feedback-section textarea {
+        font-size: 14px;
+    }
+}
+
+/* Universal Styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     color: #333;
     line-height: 1.6;
-    padding: 20px;
 }
 
-h1 {
-    color: #315c45;
-    text-align: center;
-    margin-top: 30px;
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
 }
+
+/* Header */
+.site-header {
+    background-color: #315c45;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.site-header h1 {
+    margin-bottom: 8px;
+}
+
+.site-header p {
+    margin-bottom: 18px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f4d49b;
+}
+
+/* Main Content */
+main {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #315c45;
+    margin-bottom: 12px;
+}
+
+/* Home Page */
+.hero {
+    text-align: center;
+    background-color: #e5efe8;
+    padding: 45px 25px;
+}
+
+.hero h2 {
+    font-size: 30px;
+}
+
+.mission,
+.library-info {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Footer */
+.site-footer {
+    background-color: #315c45;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 20px;
+}
+
+/* Collections Page */
+.collections-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.category {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 0;
+}
+
+.category ul {
+    list-style: none;
+}
+
+.category li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e5efe8;
+}
+
+.category li:last-child {
+    border-bottom: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    .site-header h1 {
+        font-size: 23px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .collections-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== Services page (Member 3) ===== */
+.svc-intro { text-align: center; padding: 1.5rem 1rem; }
+
+.svc-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  padding: 1rem;
+}
+
+.svc-card {
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  background: #ffffff;
+}
+
+.svc-card h3 { margin-top: 0; }
+
+/* Responsive: tablets */
+@media (max-width: 900px) {
+  .svc-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Responsive: phones */
+@media (max-width: 600px) {
+  .svc-grid { grid-template-columns: 1fr; }
+  .svc-card { padding: 0.75rem 1rem; }
+}
+/* ===== End of Services page ===== */
+
+
+/* ===== Membership page (Member 2) ===== */
+.mem-intro p {
+    max-width: 70ch;
+}
+
+section.mem-plans {
+    background: transparent;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.mem-plan {
+    position: relative;
+    background-color: white;
+    border-top: 6px solid #315c45;
+    border-radius: 8px;
+    padding: 28px 24px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.mem-plan:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.mem-plan h3 {
+    color: #315c45;
+    font-size: 1.3rem;
+}
+
+.mem-fee {
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: #af741d;
+    margin-bottom: 14px;
+}
+
+.mem-fee span {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #666;
+}
+
+.mem-plan ul {
+    list-style: none;
+}
+
+.mem-plan li {
+    padding: 10px 0;
+    border-top: 1px solid #e3e3e3;
+}
+
+.mem-plan li strong {
+    display: block;
+    color: #315c45;
+    font-size: 0.85rem;
+}
+
+.mem-popular {
+    border-top-color: #c8902f;
+}
+
+.mem-badge {
+    position: absolute;
+    top: -14px;
+    right: 16px;
+    background-color: #c8902f;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 3px 12px;
+    border-radius: 12px;
+}
+
+.mem-rules ul {
+    padding-left: 22px;
+}
+
+.mem-rules li {
+    margin-bottom: 8px;
+}
+
+/* Membership page: header and footer polish */
+.site-header {
+    background: linear-gradient(135deg, #315c45, #234435);
+    border-bottom: 4px solid #c8902f;
+    padding: 32px 15px 22px;
+}
+
+.site-header h1 {
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+}
+
+.site-header p {
+    color: #e5efe8;
+    font-style: italic;
+}
+
+nav a {
+    padding: 6px 14px;
+    border-radius: 20px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+nav a.active {
+    background-color: #c8902f;
+    color: white;
+}
+
+.site-footer {
+    background: #234435;
+    border-top: 4px solid #c8902f;
+    padding: 22px 15px;
+    font-size: 0.9rem;
+}
+
+/* Media query: stack the plan cards on tablets and phones */
+@media (max-width: 800px) {
+    section.mem-plans {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Style membership page header, footer and plan cards */
